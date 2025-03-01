@@ -12,10 +12,14 @@ game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(
 task.wait()
 end
 
+local function KickPlayer ()
+local player = game:GetService("Players").LocalPlayer
+
+player.Kick("Exploiting")
+end
+
 wait(2)
-player:Kick("why exploiting")
-
-
+KickPlayer()
 
 
 
