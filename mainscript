@@ -9,9 +9,9 @@ local player = game:GetService("Players").LocalPlayer
 while true do
 game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Hello!", "All")
 task.wait()
-end
-
 wait(2)
 player:Kick("Exploiting")
+end
+
 
 
